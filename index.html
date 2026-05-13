@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل أكواد أورنج Orange الشامل 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ora-orange: #FF7900; /* لون أورنج الرسمي */
+            --ora-dark: #000000;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--ora-dark);
+            background-image: radial-gradient(circle at top right, #2b1400, transparent), radial-gradient(circle at bottom left, #000000, transparent);
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            border-bottom: 2px solid var(--ora-orange);
+            margin-bottom: 30px;
+        }
+
+        header h1 { font-size: 2.2rem; color: var(--ora-orange); text-shadow: 0 0 10px rgba(255, 121, 0, 0.3); }
+
+        .section-title {
+            color: #000;
+            background: var(--ora-orange);
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 40px 0 20px;
+            font-size: 1.3rem;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 121, 0, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            border-color: var(--ora-orange);
+            transform: translateY(-3px);
+            background: rgba(255, 121, 0, 0.08);
+        }
+
+        .card-title { font-weight: bold; margin-bottom: 8px; color: #fff; min-height: 40px; }
+        .card-price { color: #aaa; font-size: 0.85rem; margin-bottom: 12px; }
+
+        .code-box {
+            background: #1a1a1a;
+            color: var(--ora-orange);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            direction: ltr !important;
+            unicode-bidi: bidi-override;
+            cursor: pointer;
+            border: 1px solid #333;
+        }
+
+        .code-box:active { background: var(--ora-orange); color: #000; }
+
+        .search-bar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid var(--ora-orange);
+            background: #111;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        footer { text-align: center; margin-top: 50px; padding: 20px; color: #666; border-top: 1px solid #222; }
+        
+        .badge {
+            font-size: 0.7rem;
+            background: #333;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>دليل أكواد أورنج Orange</h1>
+        <p>مرجعك الشامل لجميع أكواد الخدمات، الباقات، والخدمة الصوتية 2026</p>
+    </header>
+
+    <input type="text" id="search" class="search-bar" placeholder="ابحث عن الخدمة (رصيد، انترنت، كاش، سلفني)..." onkeyup="searchCodes()">
+
+    <!-- القسم 1: الأكواد الأساسية المختصرة -->
+    <h2 class="section-title">⚡ الأكواد الأساسية المختصرة</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">معرفة رقم الخط</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('*119#')">*119#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة الرصيد المتبقي</span>
+            <span class="card-price">3 قروش</span>
+            <div class="code-box" onclick="copyCode('#100#3#')">#100#3#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">شحن كارت أورنج</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('*102*رقم_الكارت#')">*102*كود الشحن#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">سلفني شكراً</span>
+            <span class="card-price">50 قرش / للمرة</span>
+            <div class="code-box" onclick="copyCode('#100#2#')">#100#2#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">كلمني شكراً</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('*121*الرقم#')">*121*الرقم#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">حفظ المكالمات (اشتراك)</span>
+            <span class="card-price">90 قرش / الشهر</span>
+            <div class="code-box" onclick="copyCode('#757#')">#757#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">عروض أورنج اليومية</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('#12#')">#12#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">جميع خدمات أورنج</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('#100#')">#100#</div>
+        </div>
+    </div>
+
+    <!-- القسم 2: خدمات الإنترنت -->
+    <h2 class="section-title">🌐 خدمات الإنترنت (Go & Online)</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">الاشتراك وتجديد باقة النت</span>
+            <span class="card-price">حسب الباقة</span>
+            <div class="code-box" onclick="copyCode('#100#4#')">#100#4#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة الميجابايتس المتبقية</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('#136#')">#136#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تحويل ميجابايتس</span>
+            <span class="card-price">3 جنيه لكل 250 ميجا</span>
+            <div class="code-box" onclick="copyCode('#100#4#')">#100#4#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء باقة الإنترنت</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('#100#4#')">#100#4#</div>
+        </div>
+    </div>
+
+    <!-- القسم 3: الخدمة الصوتية والأرقام المختصرة -->
+    <h2 class="section-title">📞 الخدمة الصوتية وخدمة العملاء</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">خدمة العملاء (أفراد)</span>
+            <span class="card-price">50 قرش / المكالمة</span>
+            <div class="code-box" onclick="copyCode('110')">110</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة عملاء (ستار / اتكلم)</span>
+            <span class="card-price">50 قرش / المكالمة</span>
+            <div class="code-box" onclick="copyCode('210')">210</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تغيير نظامك / عروضك</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('400')">400</div>
+        </div>
+        <div class="card">
+            <span class="card-title">الخط الساخن (من أي هاتف)</span>
+            <span class="card-price">سعر المكالمة العادية</span>
+            <div class="code-box" onclick="copyCode('16110')">16110</div>
+        </div>
+        <div class="card">
+            <span class="card-title">أورنج كاش (الخدمة الصوتية)</span>
+            <span class="card-price">مجاناً</span>
+            <div class="code-box" onclick="copyCode('8000')">8000</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة الكول تون (اشتراك)</span>
+            <span class="card-price">5 جنيه / الشهر</span>
+            <div class="code-box" onclick="copyCode('999')">999</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة عملاء ADSL</span>
+            <span class="card-price">سعر المكالمة العادية</span>
+            <div class="code-box" onclick="copyCode('16333')">16333</div>
+        </div>
+        <div class="card">
+            <span class="card-title">للحصول على رقم PUK</span>
+            <span class="card-price">سعر المكالمة العادية</span>
+            <div class="code-box" onclick="copyCode('01222444400')">01222444400</div>
+        </div>
+    </div>
+
+    <!-- القسم 4: تحويل المكالمات والحماية -->
+    <h2 class="section-title">🛡️ خدمات المكالمات والحماية</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">جعل الهاتف غير متاح</span>
+            <div class="code-box" onclick="copyCode('**62*الرقم#')">**62*الرقم#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء الهاتف غير متاح</span>
+            <div class="code-box" onclick="copyCode('##62#')">##62#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">جعل الهاتف مشغول</span>
+            <div class="code-box" onclick="copyCode('**67*الرقم#')">**67*الرقم#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء جعل الهاتف مشغول</span>
+            <div class="code-box" onclick="copyCode('##67#')">##67#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">حجب الأرقام المزعجة</span>
+            <span class="card-price">5 جنيه / الشهر</span>
+            <div class="code-box" onclick="copyCode('#100#5#')">#100#5#</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع أكواد أورنج مصر المحدثة 2026 &copy; عبدالله السواح</p>
+    </footer>
+</div>
+
+<script>
+    function copyCode(text) {
+        // تنظيف الكلمات التوضيحية قبل النسخ
+        let cleanText = text.replace('رقم_الكارت', '').replace('الرقم', '');
+        navigator.clipboard.writeText(cleanText).then(() => {
+            alert("تم نسخ الكود: " + cleanText);
+        });
+    }
+
+    function searchCodes() {
+        let input = document.getElementById('search').value.toLowerCase();
+        let cards = document.getElementsByClassName('card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].innerText.toLowerCase();
+            cards[i].style.display = title.includes(input) ? "" : "none";
+        }
+    }
+</script>
+
+</body>
+</html>
