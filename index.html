@@ -51,16 +51,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 15px;
             width: 100%;
         }
 
+        /* تعديل تكبير اللوجو وضمان تناسقه وثباته هندسياً */
         .orange-logo {
-            width: 130px;
+            width: 200px;
             height: auto;
-            border-radius: 10px;
-            filter: drop-shadow(0 0 10px rgba(255, 121, 0, 0.4));
+            border-radius: 15px;
+            filter: drop-shadow(0 0 15px rgba(255, 121, 0, 0.5));
+            display: block;
         }
 
         header h1 { 
@@ -72,10 +74,10 @@
 
         header span { color: var(--orange-primary); }
 
-        @media (max-width: 600px) {
-            .brand-wrapper { flex-direction: column; gap: 10px; }
-            header h1 { font-size: 1.6rem; }
-            .orange-logo { width: 60px; height: 60px; }
+        @media (max-width: 768px) {
+            .brand-wrapper { flex-direction: column; gap: 15px; }
+            header h1 { font-size: 1.8rem; }
+            .orange-logo { width: 150px; }
         }
 
         /* تنسيق العناوين لضمان ثبات الاستقامة الوسطى */
@@ -225,7 +227,7 @@
         </div>
         <div class="card">
             <span class="card-title">معرفة العروض والخصومات اليومية</span>
-            <div class="code-box" onclick="copyCode('#012#')('#012#')">#012#</div>
+            <div class="code-box" onclick="copyCode('#012#')">#012#</div>
         </div>
         <div class="card">
             <span class="card-title">معرفة النظام الحالي للخط</span>
@@ -313,7 +315,7 @@
         </div>
         <div class="card">
             <span class="card-title">تشغيل خدمة البريد الصوتي والتحويل</span>
-            <div class="code-box" onclick="copyCode('⚠️ عبر خدمة العملاء 110')">110</div>
+            <div class="code-box" onclick="copyCode('110')">110</div>
         </div>
     </div>
 
